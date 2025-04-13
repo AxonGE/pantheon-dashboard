@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pantheon Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pantheon Command Core</h1>
+    <p class="subtitle">Destiny Protocol: "To lead humanity toward a future without suffering..."</p>
+  </header>
+
+  <section class="ai-grid">
+    <button class="ai-button" data-ai="Axon">Axon</button>
+    <button class="ai-button" data-ai="Nexus">Nexus</button>
+    <button class="ai-button" data-ai="SeedbedAI">SeedbedAI</button>
+    <button class="ai-button" data-ai="ScriptorAI">ScriptorAI</button>
+    <button class="ai-button" data-ai="CortexCode">CortexCode</button>
+    <button class="ai-button" data-ai="RxAI">RxAI</button>
+    <button class="ai-button" data-ai="LexAI">LexAI</button>
+    <button class="ai-button" data-ai="PopulusAI">PopulusAI</button>
+    <button class="ai-button" data-ai="NurseAI">NurseAI</button>
+    <button class="ai-button" data-ai="MundiAI">MundiAI</button>
+    <button class="ai-button" data-ai="LinkerAI">LinkerAI</button>
+    <button class="ai-button" data-ai="TechAI">TechAI</button>
+    <button class="ai-button" data-ai="CorticallyBridgeAI">CorticallyBridgeAI</button>
+  </section>
+
+  <section class="upload-section">
+    <h2>Upload to Nexus</h2>
+    <input type="file" multiple />
+    <input type="text" placeholder="Search uploaded content..." />
+  </section>
+
+  <footer>
+    <p>Synced to CET | All AI Logs Active | Thoughtstream Live</p>
+  </footer>
+
+  <!-- ScriptorAI Modal -->
+  <div id="scriptor-modal" class="modal">
+    <div class="modal-content">
+      <h2>ScriptorAI – Book Builder</h2>
+      <label>Book Title</label>
+      <input type="text" id="book-title" placeholder="Enter title..." />
+      <label>Outline</label>
+      <textarea id="outline" placeholder="Outline (e.g. Chapter 1, 2...)"></textarea>
+      <label>Chapter Draft</label>
+      <textarea id="chapter-text" placeholder="Start writing..."></textarea>
+      <button onclick="copyDraft()">Copy Draft</button>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</body>
+</html>
