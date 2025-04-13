@@ -1,14 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pantheon Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pantheon Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to the Pantheon Dashboard</h1>
-  <div id="ai-grid"></div>
-  <script src="app.js"></script>
+    <header>
+        <h1>🏛️ Welcome to the Pantheon Dashboard</h1>
+        <p>System status and AI control center – <strong>core.gabrielellul.com</strong></p>
+    </header>
+    <section class="status-grid">
+        <div class="status-card"><h2>📊 Data Bandwidth</h2><p id="bandwidth">Loading...</p></div>
+        <div class="status-card"><h2>💾 Storage Capacity</h2><p id="storage">Loading...</p></div>
+        <div class="status-card"><h2>🧠 Thoughtstream</h2><p id="thoughtstream">Active</p></div>
+    </section>
+    <section class="ai-grid">
+        <h2>Tier 0 - Core AIs</h2>
+        <div class="tile-group">
+            <button>Axon</button><button>Nexus</button><button>SeeubedAI</button><button>ScoutAI</button>
+            <button>TainerAI</button><button>TrainerAI</button><button>EchoAI</button>
+        </div>
+        <h2>Tier 1 AIs</h2>
+        <div class="tile-group">
+            <button>LedgerAI</button><button>EthosAI</button><button>ScriptorAI</button>
+            <button>CortexAI</button><button>CortaxCode</button><button>PrijoritaAI</button><button>LexAI</button>
+        </div>
+        <h2>Seedbed AIs</h2>
+        <div class="tile-group">
+            <button>LucentAI</button><button>PolisAI</button><button>VisionaryAI</button>
+        </div>
+    </section>
+    <footer>
+        <p>🕒 Synced to CET | Powered by Axon | Thoughtstream Enabled</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
